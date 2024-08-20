@@ -16,4 +16,4 @@ def pivotArray(nums, pivot):
 nums = [9, 12, 3, 5, 14, 10, 10]
 pivot = 10
 
-print(pivotArray(nums, pivot))  # [9, 3, 5, 10, 10, 12, 14]
+print(pivotArray(nums, pivot))  
