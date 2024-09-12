@@ -1,17 +1,16 @@
 def mergeAlternately(word1, word2):
-    mergedWord = []
-    word2_cur = 0
-    
-    for i in word1:
-        mergedWord.append(i)
-        if word2_cur < len(word2):
-            mergedWord.append(word2[word2_cur])
-            word2_cur += 1
+        word = []
+        for i in range(len(word1+word2)):
+            if i < len(word1) and i < len(word2):
+                word.append(word1[i])
+                word.append(word2[i])
+            else:
+                if i < len(word1):
+                    word.append(word1[i])
+                elif i<len(word2):
+                    word.append(word2[i])
 
-
-    mergedWord.extend(word2[word2_cur:])
-    
-    return ''.join(mergedWord)
+        return "".join(word)
 
 
 print(mergeAlternately("be", "bab"))
