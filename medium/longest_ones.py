@@ -1,4 +1,4 @@
-def longestOnes(nus, k):
+def longestOnes(nums, k):
         window = 0
         max_size = 0 
         zeros = 0
